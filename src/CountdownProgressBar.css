@@ -1,0 +1,52 @@
+/* CountdownProgressBar.css */
+.progress-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 20px;
+  background: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+/* Add styles for the left and right circles */
+.progress-circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid rgb(216, 216, 216);
+}
+
+.progress-circle.left {
+  left: 0;
+}
+
+.progress-circle.right {
+  right: 0;
+}
+
+/* Add styles for the labels */
+.circle-label {
+  position: absolute;
+  font-size: 24px;
+  top: -40px; /* Position above the circle */
+  color: whitesmoke; /* Make the text transparent */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.label-left {
+  left: -30px; /* Position 30px to the left of the left circle */
+}
+
+.label-right {
+  right: -30px; /* Position 30px to the right of the right circle */
+}

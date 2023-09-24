@@ -1,0 +1,52 @@
+/* CountdownTimer.css */
+
+/* Add the following rules to prevent scrolling and move the countdown up */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .countdown-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the container to the full viewport height */
+    background-color: black;
+  }
+  
+  /* Remove margin-right from h1 */
+  h1 {
+    text-align: center;
+    background-color: transparent; /* Remove the black background */
+    border-radius: 20%;
+    margin-top: 60px;
+    padding: 5px;
+    color: white; /* Set the text color for the header */
+    font-size: 5vh;
+}
+  
+  /* Remove the display: inline-block; rule from .countdown-text */
+  .countdown-text {
+    text-align: center;
+  }
+  
+  /* Add a new class to style the countdown items as inline-block */
+  .countdown-inline {
+    display: inline-block;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 9vw;
+    color: white;
+    transition: color 0.3s;
+    margin: 0; /* Remove margin to align items next to each other */
+  }
+  
+  .countdown-inline:hover {
+    color: red;
+  }
+  @media (max-width: 414px) {
+    .countdown-item {
+      font-size: 48px; /* Adjust the font size for smaller screens */
+    }
+  }

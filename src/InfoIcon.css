@@ -1,0 +1,43 @@
+/* InfoIcon.css */
+.info-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .info-icon {
+    font-size: 64px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .info-icon-container:hover .info-icon {
+    transform: scale(1.5); /* Scale the icon when hovering over its container */
+  }
+  
+  .info-text {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -80px;
+    left: -150%;
+    transform: translateX(-50%);
+    animation: fadeOut 5s ease-in-out;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
