@@ -30,7 +30,7 @@ const CountdownTimer = ({ targetDate }) => {
     }, 1000);
 
     return () => clearInterval(timerInterval);
-  }, []);
+  }, );
 
   const calculateBackgroundColor = () => {
     const now = new Date().getTime();
@@ -51,7 +51,7 @@ const CountdownTimer = ({ targetDate }) => {
     }, 1000);
 
     return () => clearInterval(timerInterval);
-  }, []); // Add an empty dependency array here to run this effect once
+  }, ); // Add an empty dependency array here to run this effect once
 
   // Update the JSX structure of CountdownTimer.js
   return (
