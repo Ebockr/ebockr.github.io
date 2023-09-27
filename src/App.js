@@ -45,7 +45,7 @@ function App() {
   } else if (remainingHours <= 24) {
     h1Text = 'Nur noch ein Tag!!';
   } else if (remainingHours <= 48) {
-    h1Text = 'Ich hoffe auch einen Tag später ist die Freude noch groß und die Blumen haben einen schönen Platz gefunden..';
+    h1Text = 'Ich hoffe auch einen Tag später ist die Freude noch genauso groß :).';
   } else if (remainingHours <= 72) {
     h1Text = 'Wenn du das hier liest, sollte ich das Wettrennen um den Titel "Freund des Jahres" sicher in der Tasche haben ;)';
   } else {
