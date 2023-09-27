@@ -34,19 +34,19 @@ function App() {
   if (remainingHours <= 0) {
     h1Text =
       'Ich hoffe mal, dass du mich nicht vergessen hast... Ansonsten haben wir gerade bestimmt eine tolle Zeit zusammen :))';
-  } else if (remainingHours <= 1) {
+  } else if (remainingHours < 1) {
     h1Text = 'Falls ich gleich ein Morgenmuffel sein sollte... Schon mal ein provisorisches: Ich liebe dich <3';
-  } else if (remainingHours <= 5) {
+  } else if (remainingHours < 5) {
     h1Text = 'Ich bin noch fleißig am Flixbusfahren... oder eher schlafen, such schon mal nen Film raus ;)';
-  } else if (remainingHours <= 10) {
+  } else if (remainingHours < 10) {
     h1Text = 'Denk dran, morgen früh musst du so einen Fremden vom Bahnhof abholen ;)';
-  } else if (remainingHours <= 15) {
+  } else if (remainingHours < 15) {
     h1Text = 'Ich hoffe, mit den kleinen Sätzen hier kann ich dich auch unterhalten, wenn ich gerade in der Uni bin ;)';
-  } else if (remainingHours <= 24) {
+  } else if (remainingHours < 24) {
     h1Text = 'Nur noch ein Tag!!';
-  } else if (remainingHours <= 48) {
-    h1Text = 'Ich hoffe auch einen Tag später ist die Freude noch genauso groß :).';
-  } else if (remainingHours <= 72) {
+  } else if (remainingHours < 48) {
+    h1Text = 'Ich hoffe auch einen Tag später ist die Freude noch genauso groß';
+  } else if (remainingHours < 72) {
     h1Text = 'Wenn du das hier liest, sollte ich das Wettrennen um den Titel "Freund des Jahres" sicher in der Tasche haben ;)';
   } else {
     h1Text = 'Gar nicht mehr lange...';
@@ -62,4 +62,5 @@ function App() {
 }
 
 export default App;
+
 
